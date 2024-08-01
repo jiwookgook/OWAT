@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="logomain.css">
+    
+    <title>OWAT - 애니 전문 OTT</title>
+    <style>
+
+            @font-face {
+                font-family: 'yg-jalnan';
+                src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            body, html {
+                height: 100%;
+                margin: 0;
+                
+            }
+
+            #BABA {
+                
+                z-index: 3;
+                background-color: transparent;
+            }
+            
+            #brandName{
+                /* font-family: 'yg-jalnan'; */
+                font-weight: normal;
+                font-style:italic;
+                font-size:xx-large;
+                margin-left: 1em;
+                color: rgb(227, 32, 97);
+                font-family: "Monoton"
+
+            }
+
+
+            #motionElement{
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+                z-index: 6;
+            }
+
+            .nav-link{
+                font-family: 'yg-jalnan';
+                font-weight: normal;
+                font-style:italic;
+                font-size:x-large;
+                margin-left: 1em;
+                color: rgb(228, 97, 143);
+            }
+
+            .content {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              margin: 20em;
+              margin-left: 64em;
+              margin-top: 27.5em;
+                  
+            }
+
+            .btn:hover {
+                background-color: rgb(210, 110, 143); /* 원하는 색상으로 변경 */
+                color: white; /* 텍스트 색상도 변경 가능 */
+            }
+
+            #bN{
+              font-family: "Monoton";
+              font-style: italic;
+            }
+
+            .dropdown-menu{
+              background-color: rgb(41, 41, 41); /* 원하는 색상으로 변경 */
+            }
+            .dropdown-item{
+              font-family: 'yg-jalnan';
+              font-size:medium;
+              font-weight: lighter;
+              font-style: italic;
+              color: rgb(234, 162, 186);
+            }
+            
+                     
+    </style>
+</head>
+<body>
+
+    <main class="{{color}}" ng-app="app" ng-controller="neon" id="motionElement">
+        <div class="bg"></div>
+
+        <div class="wrapper">
+            <h1 class="font1">
+                <span ng-bind="user.name()" style="font-style: italic;"></span>
+                <h2 class="font2">by @JI_WOOK</h2>
+            </h1>
+        </div>
+    </main>
+
+    
+    <nav class="navbar navbar-expand-lg custom-bg" id="BABA" style="background-color: rgb(41, 41, 41);">
+        
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="brandName">OWAT</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="mainhome.html" style="color: rgb(228, 97, 143);">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about_us.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Subscribe.html">Subscribe</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  WHAT
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">귀멸의 칼날</a></li>
+                  <li><a class="dropdown-item" href="#">주술회전</a></li>
+                  <li><a class="dropdown-item" href="#">진격의 거인</a></li>
+                  <li><a class="dropdown-item" href="#">원피스</a></li>
+                  <li><a class="dropdown-item" href="#">하이큐</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container-fluid col-2">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-sm btn-outline-secondary" type="submit" >Search</button>
+            </form>
+          </div>
+      </nav>
+
+    
+
+      <div >
+        <p style="margin: 1em; margin-top: 2em; font-size: 80px; font-weight:lighter;" id="bN">OWAT</p>
+      </div>
+
+      <div style="margin: 5em; margin-bottom: 2em; height: 10em; width: 50em; line-height: 2;">
+        <p>넷플릭스는 즐거운 세상을 만들고 싶습니다. 어떤 취향이든, 또 어디에 살든 상관없이 넷플릭스에서는 업계 최고의 시리즈, 다큐멘터리, 장편 영화, 게임을 만날 수 있습니다. 넷플릭스 회원은 원하는 콘텐츠를 원하는 시간에 간단한 멤버십 하나로 이용합니다. 넷플릭스는 30여 개 언어로 190개 국가에서 스트리밍 서비스를 제공하고 있습니다. 위대한 이야기는 어디서든 생겨날 수 있고 어디서든 사랑받을 수 있기 때문입니다. 넷플릭스는 엔터테인먼트를 사랑하는 세계 최고의 팬이며, 회원이 좋아할 만한 이야기를 꾸준히 전하고자 항상 노력합니다.넷플릭스는 즐거운 세상을 만들고 싶습니다. 어떤 취향이든, 또 어디에 살든 상관없이 넷플릭스에서는 업계 최고의 시리즈, 다큐멘터리, 장편 영화, 게임을 만날 수 있습니다. 넷플릭스 회원은 원하는 콘텐츠를 원하는 시간에 간단한 멤버십 하나로 이용합니다. 넷플릭스는 30여 개 언어로 190개 국가에서 스트리밍 서비스를 제공하고 있습니다. 위대한 이야기는 어디서든 생겨날 수 있고 어디서든 사랑받을 수 있기 때문입니다. 넷플릭스는 엔터테인먼트를 사랑하는 세계 최고의 팬이며, 회원이 좋아할 만한 이야기를 꾸준히 전하고자 항상 노력합니다.넷플릭스는 즐거운 세상을 만들고 싶습니다. 어떤 취향이든, 또 어디에 살든 상관없이 넷플릭스에서는 업계 최고의 시리즈, 다큐멘터리, 장편 영화, 게임을 만날 수 있습니다. 넷플릭스 회원은 원하는 콘텐츠를 원하는 시간에 간단한 멤버십 하나로 이용합니다. 넷플릭스는 30여 개 언어로 190개 국가에서 스트리밍 서비스를 제공하고 있습니다. 위대한 이야기는 어디서든 생겨날 수 있고 어디서든 사랑받을 수 있기 때문입니다. 넷플릭스는 엔터테인먼트를 사랑하는 세계 최고의 팬이며, 회원이 좋아할 만한 이야기를 꾸준히 전하고자 항상 노력합니다.</p>
+        
+      </div>
+
+      <div class="content">
+        <img src="image/about.us.jpg" class="rounded-corners" style="width: 800px; border-radius: 10px;">
+      </div>
+
+    <script src="angular.min.js"></script>
+    <script src="a_farm_title_low.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

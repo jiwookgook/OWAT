@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>로고 연습</title>
+
+        <style>
+            @import url(https://fonts.googleapis.com/css?family=Monoton);
+            @import url(https://fonts.googleapis.com/css?family=Great+Vibes);
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                overflow: hidden;
+            }
+
+            main {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+                transition: opacity 2s;
+            }
+
+            .bg {
+                background-image: url(https://raw.githubusercontent.com/interaminense/repository-codepen/master/neon-codepen/bg-neon.jpg);
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                background-size: 1250px;
+                opacity: 0.3;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            .wrapper {
+                position: absolute;
+                width: auto;
+                height: 150px;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                text-align: center;
+            }
+
+            .wrapper h1 {
+                font-size: 100px;
+                margin: 0;
+                font-weight: normal;
+            }
+
+            .wrapper h2 {
+                font-size: 20px;
+                margin: 0;
+                font-weight: normal;
+                line-height: 10px;
+            }
+
+            .font1 {
+                font-family: "Monoton", cursive;
+            }
+
+            .font2 {
+                font-family: "Great Vibes", cursive;
+            }
+
+            .input-text {
+                position: absolute;
+                left: 20px;
+                top: 20px;
+                width: 280px;
+                padding: 5px 20px;
+                border: none;
+                background-color: rgba(0, 0, 0, 0.4);
+                font-family: "Monoton", cursive;
+                font-size: 35px;
+                box-shadow: 15px 15px 23px rgba(0, 0, 0, 0.2);
+                outline: none;
+                z-index: 1;
+            }
+
+            .buttons {
+                position: absolute;
+                z-index: 1;
+                right: 20px;
+                top: 20px;
+            }
+
+            .buttons button {
+                float: left;
+                border: none;
+                width: 16px;
+                height: 16px;
+                border-radius: 4px;
+                margin-right: 10px;
+                padding: 0;
+                cursor: pointer;
+            }
+
+            button.btn-pink {
+                background-color: #E91E63;
+            }
+
+            main.pink {
+                animation: bgNeon-1 3s infinite;
+            }
+            main.pink .input-text {
+                color: #E91E63;
+            }
+            main.pink .wrapper h1 {
+                animation: neon2-1 3s infinite;
+            }
+            main.pink .wrapper h2 {
+                text-shadow: 0 0 10px #E91E63, 0 0 30px #e91ec9;
+                color: #E91E63;
+            }
+            @keyframes neon2-1 {
+                0% {
+                    color: #E91E63;
+                    text-shadow: 0 0 10px #E91E63, 1px 1px #f7a9c4, 0 0 280px #e91ec9;
+                }
+                80% {
+                    color: #E91E63;
+                    text-shadow: 0 0 10px #E91E63, 1px 1px #f7a9c4, 0 0 280px #e91ec9;
+                }
+                81% {
+                    color: #222;
+                    text-shadow: 0 0 10px #000, 1px 1px #634a52, -2px 0px 4px #29121A;
+                }
+                94% {
+                    color: #222;
+                    text-shadow: 0 0 10px #000, 1px 1px #634a52, -2px 0px 4px #29121A;
+                }
+                95% {
+                    color: #E91E63;
+                    text-shadow: 0 0 10px #E91E63, 1px 1px #f7a9c4, 0 0 280px #e91ec9;
+                }
+                96% {
+                    color: #222;
+                    text-shadow: 0 0 10px #000, 1px 1px #634a52, -2px 0px 4px #29121A;
+                }
+                97% {
+                    color: #E91E63;
+                    text-shadow: 0 0 10px #E91E63, 1px 1px #f7a9c4, 0 0 280px #e91ec9;
+                }
+                98% {
+                    color: #E91E63;
+                    text-shadow: 0 0 10px #E91E63, 1px 1px #f7a9c4, 0 0 280px #e91ec9;
+                }
+                99% {
+                    color: #222;
+                    text-shadow: 0 0 10px #000, 1px 1px #634a52, -2px 0px 4px #29121A;
+                }
+                100% {
+                    color: #E91E63;
+                    text-shadow: 0 0 10px #E91E63, 1px 1px #f7a9c4, 0 0 280px #e91ec9;
+                }
+            }
+            @keyframes bgNeon-1 {
+                0% {
+                    background-color: #36052e;
+                }
+                80% {
+                    background-color: #36052e;
+                }
+                81% {
+                    background-color: #111;
+                }
+                94% {
+                    background-color: #111;
+                }
+                95% {
+                    background-color: #36052e;
+                }
+                96% {
+                    background-color: #111;
+                }
+                97% {
+                    background-color: #36052e;
+                }
+                98% {
+                    background-color: #36052e;
+                }
+                99% {
+                    background-color: #111;
+                }
+                100% {
+                    background-color: #36052e;
+                }
+            }
+
+            #motionElement {
+                transition: opacity 2s;
+            }
+
+            .hidden {
+                opacity: 0;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <main class="{{color}}" ng-app="app" ng-controller="neon" id="motionElement">
+            <div class="bg"></div>
+
+            <div class="wrapper">
+                <h1 class="font1">
+                    <span ng-bind="user.name()" style="font-style: italic;"></span>
+                    <h2 class="font2">by @JI_WOOK</h2>
+                </h1>
+            </div>
+        </main>
+
+        <script src="angular.min.js"></script>
+        <script>
+            var app = angular.module('app', []);
+
+            app.controller('neon', function($scope, $element){
+                var _name = 'A_FARM';
+                $scope.user = {
+                    name: function(newName) {
+                        return arguments.length ? (_name = newName) : _name;
+                    }
+                };
+                $scope.getColor = function(color){
+                    $scope.color = color;
+                };
+                var _color = ['pink'];
+                $scope.getColor(_color[0]);
+            });
+
+            window.onload = function() {
+                const motionElement = document.getElementById('motionElement');
+                console.log(motionElement);
+                setTimeout(function() {
+                    motionElement.classList.add('hidden');
+                }, 4000); // 4초 후에 요소 숨김
+
+                motionElement.addEventListener('transitionend', function() {
+                    if (motionElement.classList.contains('hidden')) {
+                        motionElement.style.display = 'none';
+                    }
+                });
+            }
+        </script>
+
+    </body>
+</html>
